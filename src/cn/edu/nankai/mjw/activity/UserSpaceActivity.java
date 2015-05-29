@@ -1,11 +1,12 @@
-package cn.edu.nankai.mjw;
+package cn.edu.nankai.mjw.activity;
 
+import cn.edu.nankai.mjw.R;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends ActionBarActivity {
+public class UserSpaceActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
