@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 按钮按下状态 -->
+    <item android:state_pressed="false">
+        
+        <shape>
+         <!-- 设置该组件为实心颜色填充 -->
+            <solid android:color="#fa3f3f"/>
+            <!-- 设置组件的描边 -->
+            <stroke android:width="0.5dp" android:color="#fa3f3f" />
+            <!-- 设置圆边角 -->
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    
+    <!-- 按钮非按下状态 -->
+    <item android:state_pressed="true">
+        <shape>
+         <!-- 设置该组件为实心颜色填充 -->
+            <solid android:color="#FF0000"/>
+            <!-- 设置组件的描边 -->
+            <stroke android:width="0.5dp" android:color="#FF0000" />
+            <!-- 设置圆边角 -->
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+
+</selector>

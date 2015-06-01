@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="wordkind">        
+     <item>入门单词</item>            
+     <item>N1</item>
+     <item>N2</item>   
+     <item>N3</item>   
+     <item>N4</item>   
+     <item>N5</item>               
+     <item>蔬菜水果类</item>
+     <item>动漫日语</item>
+ 
+  </string-array>
+</resources>

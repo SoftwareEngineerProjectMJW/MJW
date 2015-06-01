@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 设置Toast的背景颜色 -->
+    <solid android:color="#55FFFFFF"/>
+    <!-- 设置Toast的边框描边 -->
+    <stroke android:width="0.5dp"
+         	android:color="#FFFFFF"/>
+     <!-- 设置Toast的圆边角 -->
+     <corners android:radius="8dp"/>
+</shape>

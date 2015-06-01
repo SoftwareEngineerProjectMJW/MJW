@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mjw_background">
+       <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/global_top_background" 
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+         <Button
+            android:id="@+id/btnActivity"
+            android:layout_width="48dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/global_top_background"
+            android:text="返回"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+      <Button
+            android:id="@+id/btnActivity"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/global_top_background"
+            android:text="已完成"
+            android:layout_alignParentLeft="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="未完成"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+     <!-- 添加一个ListView组件 -->
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="50dp" >
+    <ListView
+        android:id="@+id/lstMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+      >
+    </ListView>
+  </LinearLayout>    
+</LinearLayout>

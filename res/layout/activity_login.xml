@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 界面外围的的整体布局风格 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mjw_background"
+    android:gravity="top"
+    android:padding="10dp" >
+ <!-- 界面上部，添加一个ImageView组件标签 -->
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+         <ImageView
+             	android:id="@+id/loginImg"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/login_logo"
+                 />
+        
+          </LinearLayout>
+      
+       <!-- 添加一个LinearLyou布局组件 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/table_style"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        
+        
+            
+        <!-- 上半部分：TableLayout完成我们的标签和编辑文本框 -->
+        <TableLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:collapseColumns="1"
+            android:stretchColumns="0">
+             <!-- 第一行组件标签 -->
+             <TableRow 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+          
+                <!-- 添加一个编辑文本框 -->
+                <EditText 
+                    android:id="@+id/txtAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@drawable/login_icon_account"
+        			android:drawablePadding="15dp"
+                    android:inputType="text"
+                    android:hint="请输入您的用户名"
+                    android:textSize="18sp"
+                    android:textColor="#ff98bede"
+                	android:textColorHint="#ffdddddd"
+                    android:background="@drawable/txt_style"
+                    android:paddingLeft="8dp"/>
+                
+            </TableRow>
+      
+            <!-- 第二行组件标签 -->
+            <TableRow 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+              
+                <!-- 添加一个编辑文本框 -->
+                <EditText 
+                    android:id="@+id/txtPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@drawable/login_icon_password"
+        			android:drawablePadding="15dp"
+                    android:inputType="textPassword"
+                    android:hint="请输入您的密码"
+                    android:textSize="18sp"
+                    android:textColor="#ff98bede"
+                	android:textColorHint="#ffdddddd"
+                    android:background="@drawable/txt_style"
+                    android:paddingLeft="8dp"/> 
+            </TableRow>
+            
+        </TableLayout>
+        <!-- 下半部分：LinearLayout实现按钮组件的添加 -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            
+            <!-- 添加一个立即注册按钮 -->
+            <Button 
+                android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="立即注册"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_reg_style"/>
+            
+             <!-- 添加一个马上登录按钮 -->
+            <Button 
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="马上登录"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_login_bg"/>
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+   
+
+</RelativeLayout>
